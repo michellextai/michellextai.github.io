@@ -1,0 +1,38 @@
+#nav-logo {
+    vertical-align: middle;
+}
+
+.container a:hover img {
+    transition: 0.5s ease;
+    -webkit-filter: blur(5px); 
+    filter: blur(5px);
+/*
+    -webkit-filter: grayscale(100%);  Safari 6.0 - 9.0 
+    filter: grayscale(100%);
+*/
+}
+
+
+/*
+.parallax-container {
+    height: 500px;
+}
+*/
+
+/*
+.intro {
+    text-align: center;
+}
+*/
+
+/*
+.valign-page.container {
+    position: relative;
+    min-height: 10em;
+}
+
+.valign-page.container p {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}*/

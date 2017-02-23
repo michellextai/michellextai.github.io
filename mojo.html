@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<!--REFERENCES
+		https://lestrangelondon.com/
+        https://www.smashingmagazine.com/2011/09/the-guide-to-css-animation-principles-and-examples/
+		http://codepen.io/collection/AxKOdY/
+	-->
+    
+    <head>
+        <title>Michelle Tai</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Double major, B.S. Business Administration (Marketing), Human-Computer Interaction">
+        <meta name="author" content="Michelle Tai">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="materialize/css/materialize.css">
+        <!-- Material Design Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- CSS custom stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <div class="navbar-fixed">
+            <nav class="valign-wrapper row">
+                <div class="nav-wrapper col l12">
+                    <ul>
+                        <li>
+                            <a class="valign" href="about.html">
+                                <img id="nav-logo" src="assets/mt-logo.png" alt="Michelle Tai" width="40" height="40">
+                            </a>
+                        </li> <!-- /end #nav-logo -->
+                        <li><span></span></li>
+                        <li class="active">
+                            <a class="valign" href="index.html">
+                                Works
+                            </a>
+                        </li>
+                        <li><span></span></li>
+                        <li>
+                            <a class="valign" href="photography.html">
+                                Photography
+                            </a>
+                        </li>
+                        <li><span></span></li>
+                        <li>
+                            <a class="valign" href="resume.html">
+                                Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- /end .nav-wrapper -->
+            </nav>
+        </div> <!-- /end .navbar-fixed -->
+        
+        <!-- PAGE TITLE -->
+        <section class="intro">
+            <div class="valign-page container">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>MoJo</h1>
+                    </div> <!-- /end .col.s12 -->
+                    <div class="col s12 m3">
+<!--
+                        <ul class="section table-of-contents">
+                            <li><a href="#mojo-overview">Overview</a></li>
+                            <li><a href="#mojo-background">Project Background</a></li>
+                            <li><a href="#mojo-motivation">Project Motivation</a></li>
+                            <li><a href="#mojo-research-plan">Research Plan</a></li>
+                            <li><a href="#mojo-research-findings">Research Findings</a></li>
+                            <li><a href="#mojo-narrowing-scope">Narrowing the Design Scope</a></li>
+                            <li><a href="#mojo-experience-prototyping">Experience Prototyping</a></li>
+                            <li><a href="#mojo-final-design">Final Design</a></li>
+                        </ul>
+-->
+                        <h2>Keywords</h2>
+                        <ul>
+                            <li>Conversational user interface</li>
+                            <li>Visioning</li>
+                            <li>Storyboarding</li>
+                            <li>Experience prototyping</li>
+                        </ul>
+                        <h2>Duration</h2>
+                        <p>2 weeks</p>
+                        <h2>Teammates</h2>
+                        <ul>
+                            <li>Peggy Chau</li>
+                            <li>Neeraj Talukdar</li>
+                        </ul>
+                    </div> <!-- /end .col.s12.m3 -->
+                    <div class="col s12 m9">
+<!--
+                        <div id="mojo-overview" class="section scrollspy">
+                            <h2>Overview</h2>
+                            <video class="responsive-video" controls>
+                                <source src="assets/mojo/mojo-video.mp4" type="video/mp4">
+                            </video>
+                        </div>  /end #mojo-overview 
+-->
+                        <div id="mojo-background" class="section scrollspy">
+                            <h2>Project Background</h2>
+                            <p>
+                                MoJo is a conversational user interface that acts as a personal dietary coach to help busy young professionals pre-plan their daily meal options. MoJo is meant to help individuals maintain their health goals while lessening their cognitive load regarding food options.
+                            </p>
+                        </div> <!-- /end #mojo-background -->
+                        <div id="mojo-motivation" class="section scrollspy">
+                            <h2>Project Motivation</h2>
+                            <p>
+                                We chose the domain of meal planning on three prongs. CUIs have not been widely explored in this domain, so any research will be reasonably novel and innovative. From informal observation, we realized a wide audience can be addressed. Finally, there are many indirect competitors (e.g., Grubhub, Eat24) in this field that would be interesting to examine.
+                            </p>
+                        </div> <!-- /end #mojo-motivation -->
+                        <div id="mojo-research-plan" class="section scrollspy">
+                            <h2>Research Plan</h2>
+                            <p>
+                                To inform our meal ordering CUI design, we wanted to gain an understanding of the following: customer behavior and preferences, various forms of meal ordering (e.g., delivery vs. takeout), current options for meal ordering, and CUI design considerations. We took three days in our research phase, consolidating our individual research insights on day three.
+                            </p>
+                        </div><!-- /end #mojo-research-plan -->
+                        <div id="mojo-research-findings" class="section scrollspy">
+                            <h2>Research Findings</h2>
+                            <p>
+                                Our research insights broadly covered the following areas: current CUI landscape, customer values, restaurant values, and CUI design recommendations.
+                            </p>
+                            <h3>Current CUI Landscape</h3>
+                            <p>
+                                The two primary selling points of existing food delivery CUIs (e.g., Zingle, Domino’s, Assist) were the elimination of app fatigue and the accessibility factor (“everyone texts”), providing customers with greater convenience, and in turn, restaurants with more customers. Conversely, the lack of a GUI means that fewer options are shown, limiting restaurant and menu item discovery. This results in fewer customization options for customers, fewer items ordered by customers, and less profit for restaurants.
+                            </p>
+                            <h3>Customer Values</h3>
+                            <p>
+                                Currently, customers can choose from third party routing services (e.g., Grubhub), third party delivery services (e.g., Postmates, UberEats), and meal prep services (e.g., Blue Apron). Increasingly, customers are valuing convenience over price so that they are paying for delivery. However, their choice of service results in tradeoffs in other value areas: price, convenience, time, quality, variety, preparation, and impersonality. Impersonality was an interesting factor in which customers order more using online services as opposed to in-person or over the phone because of the reduced perceived social judgment present.
+                            </p>
+                            <h3>Restaurant Values</h3>
+                            <p>
+                                From a restaurant’s perspective, selection of services to host them is methodological. Restaurants tend to choose services based on restaurant and menu discovery, customizability of the website, setup and monthly fees, social media integration, advertisement, and ultimately which service is most popular with customers.
+                            </p>
+                            <h3>Design Considerations</h3>
+                            <p>
+                                Primary CUI challenges included: feature discovery, providing useful feedback, appropriate level of emotion and using natural language programming algorithms to allow the user to speak naturally. Design recommendations were the following:
+                            </p>
+                            <ol>
+                                <li>To take into account accent variability, volume, pace, tone and timbre in designing voice interfaces,</li>
+                                <li>Validating input to prevent errors,</li>
+                                <li>Paying attention to differences between written and spoken languages,</li>
+                                <li>Allowing flexibility in moving forwards and backwards in the CUI, and</li>
+                                <li>Anticipating needs and providing helpful suggestions to the user.</li>
+                            </ol>
+                        </div> <!-- end #mojo-research-findings -->
+                        <div id="mojo-narrowing-scope" class="section scrollspy">
+                            <h2>Narrowing the Design Scope</h2>
+                            <p>
+                                As the next step, we wanted to explore potential design directions. We wanted to make sure our CUI would fit user’s context and would provide the functionality a GUI would not rather than wedging in a solution that did not make sense. This process took a total of three days.
+                            </p>
+                            <h3>Scenario Generation and Analysis</h3>
+                            <p>
+                                From our research insights, we each brainstormed four scenario cases. Several interesting research insights we especially wanted to draw from for our brainstorming session were that people ordered less food via an impersonal GUI due to lack of social judgment and the greater accessibility of CUIs to new users and those suffering from app fatigue.
+                            </p>
+                            <p>
+                                From our generated scenarios, we made a list of underlying value propositions to help identify the main situations where a CUI would be more useful than a GUI. They are as listed:
+                            </p>
+                            <ol>
+                                <li>Consolidating food ordering on different platforms,</li>
+                                <li>Finding a new restaurant that matches personal preferences,</li>
+                                <li>Optimizing group preferences,</li>
+                                <li>Automated meal delivery,</li>
+                                <li>Recommendations and specifications,</li>
+                                <li>Notification trackers, Cost splitting,</li>
+                                <li>Connecting with friends,</li>
+                                <li>Reducing cognitive load by finding restaurants for you given your personal food choice,</li>
+                                <li>Food habit trackers (what, when, where), and</li>
+                                <li>Helping to maintain healthy choices.</li>
+                            </ol>
+                            <p>
+                                Matching our research insights, value propositions in our scenarios and list of appropriate contexts, we focused on reducing cognitive load for individuals trying to make healthy food choices. This choice allows us to design for a broader population and go in a more unique direction that others may not think of. It also best allows us to use our research insights to reframe the problem of people having less menu and restaurant discoverability when using CUIs: what if less menu and restaurant discoverability could be seen as an asset to customers? And what if ordering less food due to an added factor of perceived social judgment could be used to help users achieve their weight loss / health conscious goals?
+                            </p>
+                            <h3>Visioning Sessions</h3>
+                            <p>We brainstormed a list of goals and considerations an individual using a CUI for healthy food choices would have, and then used the list as a basis for three visioning sessions:</p>
+                            <ol>
+                                <li>Weight loss,</li>
+                                <li>Portion control,</li>
+                                <li>Athletic performance,</li>
+                                <li>Progress tracking,</li>
+                                <li>Comparison metrics,</li>
+                                <li>Specific dietary needs (vegan, gluten-free, allergies),</li>
+                                <li>Motivation (developing intrinsic motivation for long-term practices),</li>
+                                <li>Timing (with workouts, avoid hunger and overeating at work), and</li>
+                                <li>Nutritional daily requirements.</li>
+                            </ol>
+                            <p>
+                                In our visioning session, one team member acted as the pen and the other two team members created a story with a person on the fly, incorporating the “Yes, and...” technique. We then discussed the pros and cons for each visioning session to then generate a list of CUI design considerations: flexibility, degree of customization, compliance, change over time (e.g., learning preferences, the day of when a goal should be met), behavioral recognition with voice tonalities, and stress as a factor in unhealthy eating.
+                            </p>
+                            <h3>Creating a Persona</h3>
+                            <p>
+                                Exploring further the direction of reducing cognitive load for individuals trying to make healthy food choices, we generated two likely personas: a professional athlete or an average individual trying to lose weight / make healthier choices. These two persona options result in different stakes, degrees of CUI flexibility, CUI personality, levels of internal motivation and potential outside sources of support (e.g., a coach). Looking at the measurable advantage each persona may gain from a meal plan CUI, we decided to focus on a busy, everyday working individual with weight loss / healthy lifestyle goals. We recognized that an athlete would have more time to dedicate to fitness, an already high level of internal motivation, and dedicated resources they turn to (e.g., trainer, coach).
+                            </p>
+                        </div> <!-- end #mojo-narrowing-scope -->
+                        <div id="mojo-experience-prototyping" class="section scrollspy">
+                            <h2>Experience Prototyping</h2>
+                            <p>
+                                We then took the next week to develop and iterate upon a minimal viable prototype so that stakeholders would understand how our design works and to gauge viability and usefulness.
+                            </p>
+                            <h3>Developing Use Cases</h3>
+                            <p>
+                                We developed several use cases for a busy working individual with weight loss goals.
+                            </p>
+                            <ol>
+                                <li>
+                                    Mandy is a busy working professional trying to lose weight. She’s stuck working late at night and she’s stressed about a deadline due the next morning. She opens up her CUI and asks to order Chinese takeout. She wants to order something satisfying and greasy, but her CUI advises against it, reminding her of her fitness goal. Mandy reconsiders but she says she wants to override anyway. The CUI tells her the consequences of this action for her week and how this will affect her weekly progress / goal. Mandy reconsiders again and decides to take off the fried eggroll appetizer and just goes for one main dish instead. The CUI takes the order, sends it to the restaurant and arranges for its delivery.
+                                </li>
+                                <li>
+                                    While the food is on its way, Mandy keeps asking about the progress since she’s starving and it’s 8:30pm now. After the second time she’s asked within the past ten minutes., the CUI advises Mandy on distraction strategies to keep her mind off her hunger. It is 9pm now and the delivery order should be arriving, but it is late. The CUI automatically contacts the delivery person and confirms the estimated time delay before telling Mandy her food should be here in ten minutes. The CUI thanks Mandy for her patience.
+                                </li>
+                                <li>
+                                    Mandy is going for a jog on the treadmill during her lunch break. The CUI senses via the accelerometer that Mandy is exercising and recommends some healthy snacks like a banana for after she’s done working out. Mandy agrees to get a banana, and the CUI has a banana delivered to her from the gym food store. Mandy is craving a cupcake when she’s done with her workout, but the arrival of the banana and the fact that it’s already paid for helps her make the decision to not get a cupcake. She thanks her CUI for helping her make good decisions.
+                                </li>
+                            </ol>
+                            <h3>Designing the Physical Form</h3>
+                            <p>
+                                A design consideration when creating the physical form of the CUI would be how involved / intrusive we wanted this device to be. Would it always be on the user like a watch, monitoring him/her and providing feedback throughout the day? Or would it be a stable object at home that’s more passive? Another consideration was that measuring the user’s weight for compliance (e.g., using a connected scale) and to approximate the user’s BMI and daily caloric intake requirements more accurately would require the user to physically get on a non-portable scale. Alternatively, a portable device could also have Fitibit-like sensors to monitor physical activity.
+                            </p>
+                            <p>
+                                Our decision in the end was to have a device at the home, like the Amazon Echo. However, to account for when the user needed to change their meal plan while away from home (e.g., because of last minute dinner plans with a coworker), there is also a portable device with more limited functionality. Several product design considerations for the portable device was that it should be fashionable, provide other sources of feedback (e.g., lights, haptic) and be context sensitive. We considered a few options for the physical form of the portable device, including a watch, pendant, ear-piece, and earring. We ended on a bracelet with a flushed button that could be pressed down. The device would vibrate when it was about to order as a warning signal. The user can press down on the button and hold to cancel the next incoming order, and a green light would emit to confirm or a red light would emit if it was too late to cancel. We did not want the bracelet to speak to the user, since it may make the user uncomfortable in a public setting. We also wanted to give the user a non voice dependent option in case the user was in a noisy setting where other individuals’ conversations may accidentally set it off.
+                            </p>
+                            <h3>CUI Design Rationale</h3>
+                            <p>
+                                Based on the CUI’s feedback options and purpose, we decided it would be more like a health coach in terms of personality. It would be supportive but also firm when needed.
+                            </p>
+                            <p>
+                                We discussed wanting the CUI to take more initiative to help motivate the person, so we decided to have it initiate conversation once the person returns home via either GPS detection or smart home integration.
+                            </p>
+                            <p>
+                                We also decided the CUI would act as a comprehensive meal planner, taking care of grocery delivery and meal delivery while also making suggestions for meals at restaurants (e.g., when eating out with friends).
+                            </p>
+                            <p>
+                                If user starts lying to the CUI about following the meal plan, the CUI will notice when the user is weighing him/herself via a connected scale, and the CUI will confront the user on his/her falsehoods.
+                            </p>
+                        </div> <!-- end #mojo-experience-prototyping -->
+                        <div id="mojo-final-design" class="section scrollspy">
+                            <h2>Final Design</h2>
+                            <p>
+                                Through feedback from experience prototyping sessions and iteration, we finalized our meal plan CUI design to best support the busy, everyday working layperson with weight loss / healthy lifestyle goals.
+                            </p>
+                            <h3>Customer Description and Goals</h3>
+                            <p>
+                                Based on our persona, we created a description of our target user and his/her goals: Mandy (28 years old) is a busy working professional trying to lose weight for a friend’s wedding she will be a bridesmaid for in 3 months. Her main goal is to look good for the wedding, and she’d also like to develop a more healthy lifestyle over the long term. Her time is limited, so she values convenience and gets her meals delivered frequently.
+
+                            <h3>CUI Description</h3>
+                            <p>
+                                We created a brief description of the CUI for the experience prototyping session based on the above design considerations: Our CUI’s name is “MoJo”, a voice interface marketed towards busy working professionals which helps users plan their daily meals according to their goals. MoJo has a main component in the customer’s home paired with a simple portable device (bracelet) for when customers need to change their meals on the go.
+                            </p>
+                            <h3>Conversation Mapping</h3>
+                            <p>
+                                We envisioned a few conversations between Mandy and MoJo that would show key use cases, namely: planning a meal, making changes to a meal plan, recording preferences and dietary restrictions, error recovery, and falling off track from the prescribed meal plan. We extrapolated from the conversation envisioning and mapped out the different conversational paths that could be taken. We decided that the CUI would at the end of each day review how that day went and determine if the user is on-track or off-track for meet their weight loss goal. If the user is on track, the CUI provides positive feedback and encouragement and plans the next day’s meals as per usual. If the user is off track, the CUI provides less flexibility in meal planning and is more directive and will provide negative feedback.
+                            </p>
+                            <h3>MoJo Physical Prototype</h3>
+                            <p>
+                                We decided to use a hair tie with a metal clasp for the portable MoJo device, since the metal clasp could serve as the button and it would be a simple, portable object. For the home MoJo device, we decided to use an aroma diffuser, since it has an ambient light and has a friendly appearance that many viewers won’t immediately look at and detect what it is.
+                            </p>
+                        </div> <!-- end #mojo-final-design -->
+                    </div> <!-- /end .col.s12.m9 -->
+                </div> <!-- /end .row -->
+            </div>
+        </section>
+      
+        <section class="works">
+        </section>
+        
+        <section class="footer">
+        </section>
+        
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script src="js/default.js"></script>
+    </body>
+</html>
