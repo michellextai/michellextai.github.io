@@ -12,6 +12,20 @@
 */
 }
 
+.resume h2 {
+  font-size: 2rem;
+  line-height: 110%; /* original: 110% */
+  margin: 1.78rem 0 1.424rem 0;
+  background-color: transparent;
+}
+
+footer p {
+    font-size: 0.75rem;
+}
+
+.sr .works {
+    visibility: hidden;
+}
 
 /*
 .parallax-container {

@@ -2167,6 +2167,8 @@ html {
  */
 body {
   margin: 0;
+  background-color: #fafafa;
+  text-rendering: optimizeLegibility;
 }
 
 /* HTML5 display definitions
@@ -2583,11 +2585,11 @@ a {
   clear: both;
 }
 
-.z-depth-0 {
+.z-depth-0, nav {
   box-shadow: none !important;
 }
 
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+.z-depth-1, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -2759,7 +2761,7 @@ video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 500px;
+  height: 650px; /* original: 500px */
 }
 
 .parallax {
@@ -4013,11 +4015,11 @@ nav ul a span.badge {
 
 nav {
   color: #c9ac6f;
-  background-color: black;
+  background-color: #fafafa; /* black */
   width: 100%;
   height: 56px;
-  line-height: 56px;
-  font-weight: 700; /* added */
+  line-height: 56px; /* originally: 56px */
+  font-weight: normal; /* added */
 }
 
 nav.nav-extended {
@@ -4042,7 +4044,7 @@ nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
 nav i.material-icons {
   display: block;
-  font-size: 24px;
+  font-size: 1rem; /* originally: 24px */
   height: 56px;
   line-height: 56px;
 }
@@ -4073,11 +4075,13 @@ nav .button-collapse i {
 
 nav .brand-logo {
   position: absolute;
-  color: #c9ac6f;
+  color: #202020;
   display: inline-block;
-  font-size: 2.1rem;
+  font-size: 1.125rem; /* originally 2.1rem */
+  font-weight: 500;
   padding: 0;
   white-space: nowrap;
+  border-bottom: none; /* added */
 }
 
 nav .brand-logo.center {
@@ -4101,13 +4105,13 @@ nav .brand-logo.center {
     left: 0.5rem;
   }
   nav .brand-logo.right {
-    right: 0.5rem;
+    right: 2rem; /* originally: 0.5rem */
     left: auto;
   }
 }
 
 nav .brand-logo.right {
-  right: 0.5rem;
+  right: 2rem; /* originally: 0.5rem */
   padding: 0;
 }
 
@@ -4129,23 +4133,49 @@ nav ul {
 }
 
 nav ul li {
-  transition: background-color .3s;
+  transition: all 0.5s ease;
   float: left;
   padding: 0;
 }
 
-nav ul li.active {
-  background-color: rgba(201, 172, 111, 0.2);
-}
-
 nav ul a {
-  transition: background-color 0.3s;
+  position: relative;
   font-size: 1rem;
-  color: #c9ac6f;
+  color: #a0a0a0;
   display: block;
   padding: 0 15px;
   cursor: pointer;
   border-bottom: none; /* added */
+}
+
+nav ul li.active, nav ul li.active>a {
+/*  background-color: rgba(201, 172, 111, 0.2);*/
+  color: #202020;
+  border-bottom: none; /* added */
+}
+
+nav ul li > a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 0.2rem;
+  bottom: 0;
+  left: 0;
+  background-color: #c9ac6f;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+nav ul li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
@@ -4159,8 +4189,10 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
   line-height: inherit;
 }
 
-nav ul a:hover {
-  background-color: rgba(201, 172, 111, 0.2);
+nav ul a:hover, nav ul li.active:hover {
+/*  background-color: rgba(201, 172, 111, 0.2);*/
+  color: #202020;
+/*  border-bottom: 0.2rem solid #c9ac6f;  width style color */
 }
 
 nav ul.left {
@@ -4204,7 +4236,7 @@ nav .input-field label.active i {
 
 .navbar-fixed {
   position: relative;
-  height: 56px;
+  height: 56px; /* originally: 56px */
   z-index: 997;
 }
 
@@ -4268,31 +4300,34 @@ a {
 html {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.87);
+  font-weight: 300; /* original: normal */
+  color: #202020; /* original: rgba(0, 0, 0, 0.87) */
 }
 
 @media only screen and (min-width: 0) {
   html {
-    font-size: 14px;
+    font-size: 18px; /* original: 14px */
   }
 }
 
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 14.5px;
+    font-size: 18px; /* original: 14.5px */
   }
 }
 
 @media only screen and (min-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 18px; /* original: 15px */
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.1;
+  font-family: "Old Standard TT", serif;
+  font-weight: normal; /* originally: 700 */
+  line-height: 1;
+  color: #202020; /* added */
+/*  background-color: black;*/
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -4300,38 +4335,47 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-size: 2.5rem;
-  line-height: 110%;
-  margin: 2.1rem 0 3rem 0; /* original: 2.1rem 0 1.68rem 0 */
+  font-size: 2.5rem; /* 2.5rem = 40px */
+  font-weight: normal;
+  line-height: 140%; /* original: 110% */
+  margin: 2.1rem 0 1.68rem 0; /* original: 2.1rem 0 1.68rem 0 */
   /* text-align: center; added */
 }
 
 h2 {
-  font-size: 2rem;
-  line-height: 110%;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.25rem; /* 2.25rem = 36px */
+  font-weight: 300;
+  line-height: 110%; /* original: 110% */
   margin: 1.78rem 0 1.424rem 0;
+/*  border-radius: 0 5px 5px 0;*/
 }
 
 h3 {
   font-size: 1.5rem;
+  font-weight: 300;
   line-height: 110%;
   margin: 1.46rem 0 1.168rem 0;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   line-height: 110%;
   margin: 1.14rem 0 0.912rem 0;
+  text-transform:uppercase;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   line-height: 110%;
   margin: 0.82rem 0 0.656rem 0;
 }
 
 h6 {
   font-size: 1rem;
+  font-weight: 300;
   line-height: 110%;
   margin: 0.5rem 0 0.4rem 0;
 }
@@ -4528,8 +4572,8 @@ small {
 }
 
 .card .card-title {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .card .card-title.activator {
@@ -4665,16 +4709,16 @@ small {
 .card .card-content p {
   margin: 0;
   color: inherit;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .card .card-content .card-title {
   display: block;
-  line-height: 16px;
+  line-height: 18px; /* originally: 16px */
 }
 
 .card .card-content .card-title i {
-  line-height: 16px;
+  line-height: 18px; /* originally: 16px */
 }
 
 .card .card-action {
