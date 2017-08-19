@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>MiTai the Moose</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Kajava Star System">
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Old+Standard+TT">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="materialize/css/materialize.css">
+        <!-- Material Design Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- CSS custom stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <section class="navigation">
+        </section>
+        
+        <!-- PAGE TITLE -->
+        <section class="intro">
+            <div class="valign-page container">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>Kajava Star System</h1>
+                    </div> <!-- /end .col.s12 -->
+                    <div class="col s12 l8">
+                        <p>
+                            For this design challenge, I made changes to an educational module to improve the presentation of information and improve the usability of the interface so that students learning introductory astronomy can navigate through the module more efficiently. Through a heuristic evaluation, I made a list of problems I saw with the current design and potential design solutions. I sketched out a prototype and finalized the design in Sketch.
+                        </p>
+                    </div> <!-- /end .col.s12.l8 -->
+                </div> <!-- /end .row -->
+            </div> <!-- /end .valign-page.container -->
+            
+            <div class="section"></div>
+            <div><img class="responsive-img materialboxed reveal" data-caption="I made changes to an educational module to improve the presentation of information and improve the usability of the interface so that students learning introductory astronomy can navigate through the module more efficiently." src="https://farm5.staticflickr.com/4391/36614092366_f15bc5d1c8_o.png" alt="Kajava Star Systen educational module redesign to improve the presentation of information and improve the usability of the interface."></div>
+            
+            <div class="row">
+                <div class="col s12 m4 offset-m4">
+                    <br>
+                    <div><img class="responsive-img materialboxed reveal" data-caption="The original design of the interface has usability issues." src="https://farm5.staticflickr.com/4339/35851258883_d69cb2ca33_o.png" alt="The original design of the interface has usability issues."></div>
+                </div> <!-- /end .col.s12.m4.offset-m4 -->
+                <div class="col s12 m4"></div>
+            </div> <!-- /end .row -->
+            
+            <div class="section"></div>
+            <div class="valign-page container">
+                <div class="row">
+                    <div class="col s12 m8 offset-m2">
+                        <div class="reveal">
+                            <div class="center-align">
+                                <h2>Design Decisions</h2>
+                                <p>
+                                    For each design decisions I made, I explained the initial problem and how severe the problem is in terms of usability and presentation. Here are some of the design ideas I incorporated in the final design.
+                                </p>
+                            </div> <!-- /end .center-align -->
+                            <ol>
+                                <li>
+                                    <b>There is a lack of consistency in formatting of the inputs in the system model.</b> Instead of requiring individuals to switch between selecting through dropdowns (gasses, greenhouse effect, liquid water) and radio buttons (hellhole, habitable, snowball), it makes sense for users to visibly see all the selections they can make in a horizontal radio buttons view. All the items that require a user’s input should be grouped together. By gestalt design, continuity and grouping would guide users to quickly decide the location where inputs must be made. This would quicken the process of selection and reselection, allowing for quick recovery from missteps. The tradeoff of this solution is the space it would take to create.
+                                </li>
+                                <br>
+                                <li>
+                                    <b>The transit spectrums graph is difficult to read for its lack of contrasting colors and reading order.</b> The graph should shade in the areas of UV and IR with a key. This would clearly mark the ranges of light in the graph and clear up confusion of where labels and lines are matched. The blue transit spectra graph should be of a differing line value (ex. dotted or thicker) from the white transit spectra. This is so even if users are less able to perceive blue, they will still understand that the two lines are differing. The magnifying glass should be changed to +/- so that users are able to zoom in on smaller details, reset the graph, and zoom back out. This lets users have more flexibility, control, and freedom in examining the information presented in the graph. Users with poorer vision will also be able to see with greater detail.
+                                </li>
+                                <br>
+                                <li>
+                                    <b>The module is difficult to navigate to confirm answers when selections are complete.</b> The next button should be at the top rightmost side of the module with the previous button falling before the first module selection. This would act as a pagination. While the design to have the pagination on the bottom rightmost corner make sense at first as well, if the use case of the module were on a tablet, the bottom right corner is where users would most accidentally tap. As users do not want to confirm system model information selection before making all the right choices, it makes more sense to have the next button on the top.
+                                </li>
+                                <br>
+                                <li>
+                                    <b>There is a lack of visual cues to guide the eye to quickly follow the observations information.</b> Since all information in the observations have the same level of importance, the information should line up as a grid, so users can quickly scan for the key points reading downwards.
+                                </li>
+                                <br>
+                                <li>
+                                    <b>Corner buttons are difficult to access.</b> The bounding boxes of buttons should be clickable at the corners of the page so that users are able to navigate quickly and focus on the task.
+                                </li>
+                                <br>
+                                <li>
+                                    <b>There is no feedback to changes that happen in response to user’s system model selections.</b> Showing motion and color as numbers and items change will highlight the important causal effects. Users will be able to see right away where one factor affects another. Users are able to see from a difference in color and motion that an item either increased or decreased in value. The tradeoff is that too many factors changing at once will overwhelm users and render the information ineffective.
+                                </li>
+                            </ol>
+                        </div> <!-- /end .reveal -->
+                    </div> <!-- /end .col.s12.m8.offset-m2 -->
+                    <div class="col s12 m2"></div>
+                </div><!-- /end .row -->
+            </div> <!-- /end .valign-page.container -->
+
+            <div class="valign-page container">
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="reveal center-align">
+                            <h6>Client: Smart Sparrow</h6>
+                        </div> <!-- /end .reveal -->
+                    </div><!-- /end .col.s12.m4 -->
+                    <div class="col s12 m4">
+                        <div class="reveal center-align">
+                            <h6>Duration: 1 day</h6>
+                        </div> <!-- /end .reveal -->
+                    </div><!-- /end .col.s12.m4 -->
+                    <div class="col s12 m4">
+                        <div class="reveal center-align">
+                            <h6>Role: Visual and UI/UX</h6>
+                        </div> <!-- /end .reveal -->
+                    </div><!-- /end .col.s12.m4 -->
+                </div> <!-- /end .row -->
+                
+            </div> <!-- /end .valign-page.container -->
+
+        <div class="section"></div>
+        <section class="works">
+        </section>
+
+        <section class="footer">
+        </section>
+        
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script src="js/default.js"></script>
+        <!-- ScrollReveal.js -->
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <!-- Flickr -->
+        <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-96255040-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
