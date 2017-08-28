@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<!--REFERENCES
+		https://lestrangelondon.com/
+        https://www.smashingmagazine.com/2011/09/the-guide-to-css-animation-principles-and-examples/
+		http://codepen.io/collection/AxKOdY/
+	-->
+    
+    <head>
+        <title>Vault</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vault is a passion project I started to help people build their productivity practice through a flexible medium for documentation of tasks, events, and notes. Current work is still in progress.">
+        <meta name="author" content="Michelle Tai">
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Old+Standard+TT">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="materialize/css/materialize.css">
+        <!-- Material Design Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- CSS custom stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <section class="navigation">
+        </section>
+        
+        <!-- PAGE TITLE -->
+        <section class="intro">
+            <div class="valign-page container">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>Vault</h1>
+                    </div> <!-- /end .col.s12 -->
+                    <div class="col s12 l8">
+                        <p>
+                            Vault is a passion project I started to help people build their productivity practice through a flexible medium for documentation of tasks, events, and notes. <b>Current work is still in progress.</b>
+                        </p>
+                    </div> <!-- /end .col.s12.l8 -->
+                </div> <!-- /end .row -->
+            </div> <!-- /end .valign-page.container -->
+            
+            <div class="section"></div>
+
+            <div class="valign-page container">
+                <div class="row">
+                    <div class="col s12 m8 offset-m2">
+                        <div class="reveal center-align">
+                            <h2>Problem</h2>
+                            <p>
+                                The purpose of the bullet journal is to simplify the way that people document, tackle, and revisit tasks, events, and notes. The current bullet journal community heavily emphasizes the aesthetic quality of the analog journal on social media, which switches the purpose of the bullet journal from simplicity to creativity. This detracts many people away from the bullet journal and opt for other journaling styles. <b>How may help people transition into using a functional bullet journal without all the effort involved?</b>
+                            </p>
+                        </div> <!-- /end .reveal.center-align -->
+                    
+                        <div class="section"></div>
+                        <div class="reveal">
+                            <div class="center-align">
+                                <h2>User Research</h2>
+                                <p>
+                                    I talked to a few people who have wanted to try or has tried but since stopped using bullet journal about my idea as a speed-dating exercise. I immediately received confirmation that they would want to try this product. Probing more deeply, I learned they have the following specific needs:
+                                </p>
+                            </div> <!-- /end .center-align -->
+                            <ol>
+                                <li>
+                                    <b>Limited time:</b> Setting up and upkeeping a bullet journal is time consuming.
+                                </li>
+                                <br>
+                                <li>
+                                    <b>Digital platform:</b> I like having my tasks and notes wherever I go, so I can add new tasks wherever I am.
+                                </li>
+                                <br>
+                                <li>
+                                    <b>Project focus:</b> I have projects with several milestones, and sometimes I have to wait for others’ parts before I am able to complete my the next action.
+                                </li>
+                                <br>
+                                <li>
+                                    <b>Future planning vault:</b> I have a lot of tasks I know I have to complete eventually, but are not time sensitive.
+                                </li>
+                                <br>
+                                <li>
+                                    <b>Visualize statistics:</b> I want to understand how successful I am in completing my tasks, so I can gather an idea how to improve my process.
+                                </li>
+                            </ol>
+                        </div> <!-- /end .reveal -->
+                        
+                        <div class="section"></div>
+                        <div class="reveal">
+                            <div class="center-align">
+                                <h2>Competitive Analysis</h2>
+                                <p>
+                                    I looked at productivity tools to see how users use those tools to boost their work process. Most relevant to this discussion were Evernote, OneNote, Google Calendar, Todoist, Wunderlist, Any.do, and Trello. I used these as benchmark for Vault’s success.
+                                </p>
+                            </div> <!-- /end .center-align -->
+                            <ol>
+                                <li>
+                                    Tag and search allows users to go back to specific items. Text tags instead of note tags in OneNote is a better system to find items in daily pages.
+                                </li>
+                                <br>
+                                <li>
+                                    A notebook style lets navigation between different modules be quick.
+                                </li>
+                                <br>
+                                <li>
+                                    Multiple calendars for color coding helps prioritization and event types at a glance.
+                                </li>
+                                <br>
+                                <li>
+                                    Subtasks support creating measurable outcomes of project goals.
+                                </li>
+                                <br>
+                                <li>
+                                    Comments and notes are useful for jotting down extra information/details that may be needed later, so you don’t have to search for it.
+                                </li>
+                                <br>
+                                <li>
+                                    You are able to prioritize items on your tasks list, so you see the important tasks to finish first.
+                                </li>
+                                <br>
+                                <li>
+                                    Todoist has streaks and karma, and Any.do has motivational messages to motivate users.
+                                </li>
+                                <br>
+                                <li>
+                                    Activity of the boards and the timestamps of action help users work with other people.
+                                </li>
+                            </ol>
+                        </div> <!-- /end .reveal -->
+                    </div> <!-- /end .col.s12.m8.offset-m2 -->
+                </div> <!-- /end .row -->
+            </div> <!-- /end .valign-page.container -->
+                        
+            <div class="valign-page container">
+                <div class="row">
+                    <div class="col s12 m8 offset-m2">
+                        <div class="reveal">
+                            <div class="center-align">
+                            <h2>Product Decisions</h2>
+                            <p>
+                                Based on the user research and competitive analysis, I decided to include the following features that provide the most value to users in the MVP:
+                            </p>
+                            </div> <!-- /end .center-align -->
+                            <ol>
+                                <li>
+                                    <b>Vault</b> for all miscellaneous items that are not time-sensitive, and remind users of the items in the vault’s existence in migration,
+                                </li>
+                                <br>
+                                <li>
+                                    <b>Visual statistics</b> of completion percent,
+                                </li>
+                                <br>
+                                <li>
+                                    <b>Subtasks</b> “next actions” and “waiting for” items for project integration,
+                                </li>
+                                <br>
+                                <li>
+                                    <b>Streamlined onboarding process</b> for quick use,
+                                </li>
+                                <br>
+                                <li>
+                                    <b>Notes and files integration</b> to quickly understand and start tasks, and
+                                </li>
+                                <br>
+                                <li>
+                                    <b>Searchable text</b> for easy access as reference.
+                                </li>
+                            </ol>
+                        </div> <!-- /end .reveal -->
+                    </div> <!-- /end .col.s12.m8.offset-m2 -->
+                </div> <!-- /end .row -->
+            </div> <!-- /end .valign-page.container -->
+                    
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="reveal center-align">
+                            <h6>Project: Digital Productivity App</h6>
+                        </div> <!-- /end .reveal -->
+                    </div><!-- /end .col.s12.m4 -->
+                    <div class="col s12 m4">
+                        <div class="reveal center-align">
+                            <h6>Duration: Ongoing</h6>
+                        </div> <!-- /end .reveal -->
+                    </div><!-- /end .col.s12.m4 -->
+                    <div class="col s12 m4">
+                        <div class="reveal center-align">
+                            <h6>Role: Visual, Motion, and UI/UX</h6>
+                        </div> <!-- /end .reveal -->
+                    </div><!-- /end .col.s12.m4 -->
+                </div> <!-- /end .row -->
+            </div> <!-- /end .valign-page.container -->
+        </section>
+            
+        <section class="works">
+        </section>
+        
+        <section class="footer">
+        </section>
+        
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <!-- ScrollReveal.js -->
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="js/default.js"></script>
+        <!-- Flickr -->
+        <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-96255040-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
